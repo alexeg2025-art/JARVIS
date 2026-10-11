@@ -1,0 +1,2 @@
+import { Minus, Square, X } from 'lucide-react';
+export function WindowControls() { return <div className="window-controls"><button aria-label="Minimize" onClick={()=>void window.jarvis.controlWindow('minimize')}><Minus size={14}/></button><button aria-label="Maximize" onClick={()=>void window.jarvis.controlWindow('maximize')}><Square size={12}/></button><button aria-label="Close" className="close-control" onClick={()=>void window.jarvis.controlWindow('close')}><X size={15}/></button></div>; }
